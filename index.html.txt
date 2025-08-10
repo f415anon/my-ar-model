@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View My Model in AR</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #012a15, #034022);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    model-viewer {
+      width: 100%;
+      max-width: 600px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 View in AR</h1>
+  
+  <!-- Android + iOS viewer -->
+  <model-viewer 
+      src="https://drive.google.com/file/d/1SmRTg9kSO2KPc2O54ppuxDsyCSdBkeOP/view?usp=sharing"
+      ar
+      ar-modes="scene-viewer quick-look webxr"
+      camera-controls
+      auto-rotate>
+  </model-viewer>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
